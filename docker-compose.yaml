@@ -2,7 +2,8 @@ version: "3.9"
     
 services:
   db:
-    image: mysql:5.7
+    build:
+      context: ./database
     command: --ignore-db-dir=lost+found
     ports:
       - 3306
@@ -19,7 +20,7 @@ services:
     depends_on:
       - db
     build:
-      context: ./
+      context: ./myapp
     ports:
       - "8000:80"
     restart: always
