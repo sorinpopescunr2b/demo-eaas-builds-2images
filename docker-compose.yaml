@@ -11,10 +11,10 @@ services:
       - db_data:/var/lib/mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: somewordpress
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: somewordpress3
+      MYSQL_DATABASE: wordpress3
+      MYSQL_USER: wordpress3
+      MYSQL_PASSWORD: wordpress3
     
   myapp:
     depends_on:
